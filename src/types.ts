@@ -97,11 +97,4 @@ export interface Translation {
   footerAddress: string;
   footerRights: string;
   footerFollow: string;
-  
-  // AI
-  aiTitle: string;
-  aiPlaceholder: string;
-  aiAdvisorPlaceholder: string;
-  aiIntro: string;
-  aiStatus: string;
 }

@@ -79,11 +79,7 @@ export const translations: Record<'hr' | 'en', Translation> = {
     footerAddress: 'Zagreb, Hrvatska',
     footerRights: 'Sva prava pridržana.',
     footerFollow: 'PRATITE NAS',
-    aiTitle: 'Viego Intel',
-    aiPlaceholder: 'Pitaj me nešto...',
-    aiAdvisorPlaceholder: 'Pitaj me o gletanju ili farbanju...',
-    aiIntro: 'Dobar dan. Ja sam Viego AI asistent. Kako vam mogu pomoći s informacijama o gletanju ili farbanju?',
-    aiStatus: 'AI SAVJETNIK AKTIVAN',
+
   },
   en: {
     navHome: 'Home',
@@ -162,10 +158,6 @@ export const translations: Record<'hr' | 'en', Translation> = {
     footerAddress: 'Zagreb, Croatia',
     footerRights: 'All rights reserved.',
     footerFollow: 'FOLLOW US',
-    aiTitle: 'Viego Intel',
-    aiPlaceholder: 'Ask me anything...',
-    aiAdvisorPlaceholder: 'Ask about plastering or painting...',
-    aiIntro: 'Hello. I am the Viego AI assistant. How can I assist you with information about plastering or painting today?',
-    aiStatus: 'AI ADVISOR ACTIVE',
+
   }
 };

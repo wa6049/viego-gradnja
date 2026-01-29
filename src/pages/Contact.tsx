@@ -27,7 +27,7 @@ const Contact: React.FC<PageProps> = ({ lang, setCurrentPage }) => {
     try {
       // Using FormSubmit.co AJAX endpoint to send email directly without leaving the page.
       // Note: On first submission, FormSubmit.co might send a confirmation email to the recipient.
-      const response = await fetch("https://formsubmit.co/ajax/wisdomanthony1999@gmail.com", {
+      const response = await fetch("https://formsubmit.co/ajax/globalviego@gmail.com", {
         method: "POST",
         headers: { 
           "Content-Type": "application/json",
@@ -81,13 +81,13 @@ const Contact: React.FC<PageProps> = ({ lang, setCurrentPage }) => {
             
             <div className="group">
               <h4 className="text-[#1a66a4] font-black uppercase tracking-[0.3em] text-[10px] md:text-xs mb-4">{t.contactCall}</h4>
-              <p className="text-2xl md:text-3xl font-black tracking-tight">+385 1 234 5678</p>
+              <p className="text-2xl md:text-3xl font-black tracking-tight">+38598310320</p>
               <p className="text-slate-500 mt-3 text-sm md:text-lg font-medium">{t.contactAvail}</p>
             </div>
 
             <div className="group">
               <h4 className="text-[#1a66a4] font-black uppercase tracking-[0.3em] text-[10px] md:text-xs mb-4">EMAIL UPITI</h4>
-              <p className="text-2xl md:text-3xl font-black tracking-tight lowercase">info@viego.hr</p>
+              <p className="text-2xl md:text-3xl font-black tracking-tight lowercase">globalviego@gmail.com</p>
               
             </div>
           </div>

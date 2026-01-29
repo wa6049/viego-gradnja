@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { translations } from '../translations';
 import { Language } from '../types';
-import ChatWidget from './ChatWidget';
+
 import UpScaleFile from '../assets/UpScaleFile2.svg';
 
 const ViegoLogo: React.FC<{ className?: string }> = ({ className = "h-24" }) => (
@@ -125,22 +125,16 @@ const Layout: React.FC<LayoutProps> = ({ children, lang, setLang, theme, setThem
         <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
           <div className="space-y-6">
             <ViegoLogo className="h-10 md:h-24" />
-            <p className="text-slate-500 text-sm max-w-xs leading-relaxed">{t.footerLegal}<br/>OIB: 12345678901</p>
+            <p className="text-slate-500 text-sm max-w-xs leading-relaxed">{t.footerLegal}<br/>OIB: 36259025926</p>
           </div>
           <div className="space-y-6">
             <h4 className="font-black text-[#1a66a4] uppercase text-xs tracking-[0.3em]">{t.navContact}</h4>
             <ul className="space-y-3 text-sm text-slate-500 font-bold uppercase tracking-wider">
               <li>{t.footerAddress}</li>
-              <li className="lowercase">info@viego.hr</li>
+              <li className="lowercase">globalviego@gmail.com</li>
             </ul>
           </div>
-          <div className="space-y-6">
-            <h4 className="font-black text-[#1a66a4] uppercase text-xs tracking-[0.3em]">{t.footerFollow}</h4>
-            <div className="flex gap-6 text-sm font-bold text-slate-500 uppercase tracking-widest">
-              <a href="#" className="hover:text-[#1a66a4] transition-colors">Instagram</a>
-              <a href="#" className="hover:text-[#1a66a4] transition-colors">Facebook</a>
-            </div>
-          </div>
+          
         </div>
         <div className="container mx-auto px-6 mt-16 pt-8 border-t border-slate-100 dark:border-slate-900 flex flex-col md:flex-row justify-between items-center text-[10px] text-slate-400 uppercase tracking-widest gap-4 font-black">
           <p>&copy; 2025 Viego Gradnja. {t.footerRights}</p>
@@ -150,7 +144,7 @@ const Layout: React.FC<LayoutProps> = ({ children, lang, setLang, theme, setThem
           </div>
         </div>
       </footer>
-      <ChatWidget lang={lang} theme={theme} />
+      
     </div>
   );
 };
