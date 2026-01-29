@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { translations } from '../translations';
 import { Language } from '../types';
-import ChatWidget from './ChatWidget';
+
 import UpScaleFile from '../assets/UpScaleFile2.svg';
 
 const ViegoLogo: React.FC<{ className?: string }> = ({ className = "h-24" }) => (
