@@ -25,21 +25,21 @@ const Contact: React.FC<PageProps> = ({ lang, setCurrentPage }) => {
     setError(null);
 
     try {
-      // Using FormSubmit.co AJAX endpoint to send email directly without leaving the page.
-      // Note: On first submission, FormSubmit.co might send a confirmation email to the recipient.
-      const response = await fetch("https://formsubmit.co/ajax/globalviego@gmail.com", {
+      // Using Web3Forms API to send email
+      const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: { 
           "Content-Type": "application/json",
           "Accept": "application/json"
         },
         body: JSON.stringify({
+          access_key: "5c94a895-aff0-41d9-b817-ca9de7a0b068",
           name: formData.name,
           email: formData.email,
           message: formData.message,
-          _subject: `Novi upit s Viego Gradnja: ${formData.name}`,
-          _template: "table",
-          _honey: "" // Honeypot field for spam prevention
+          subject: `Novi upit s Viego Gradnja: ${formData.name}`,
+          from_name: "Viego Gradnja Web",
+          botcheck: "" // Honeypot field for spam prevention
         })
       });
 
