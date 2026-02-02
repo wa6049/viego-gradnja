@@ -33,7 +33,7 @@ const Contact: React.FC<PageProps> = ({ lang, setCurrentPage }) => {
           "Accept": "application/json"
         },
         body: JSON.stringify({
-          access_key: "5c94a895-aff0-41d9-b817-ca9de7a0b068",
+          access_key: "f7feb128-977b-43b1-9f99-d7ee549e6a41",
           name: formData.name,
           email: formData.email,
           message: formData.message,
